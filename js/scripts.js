@@ -10,19 +10,18 @@ $(document).ready(function() {
     }
 
     $("#rollresult").empty();
+    $("#turnTotal").empty();
     userTotal.push(getRandomInt())
 
-    var rollLog = 0;
-      for(var index = 0; index < userTotal.length; index += 1) {
-        $("#rollresult").text(userTotal[index]);
-      }
+
 
     var rollTotal = 0
       for(var index = 0; index < userTotal.length; index += 1) {
+        $("#rollresult").text(userTotal[index]);
         rollTotal += userTotal[index];
       }
 
-    $("#turnTotal").empty();  
+
     $("#turnTotal").text(rollTotal);
 
 
